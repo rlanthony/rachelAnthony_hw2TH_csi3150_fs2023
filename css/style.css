@@ -1,0 +1,350 @@
+/* button click/hover pseudo class*/
+
+/* COLOR PALLETTE:
+
+major: #EEEEEE
+font: #0B132B
+accent: ##C78283
+
+*/
+
+/* reset default html styling */
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* --------BODY--------- */
+body {
+  /*background-image: */
+  --main-color: #eeeeee;
+  --font-color: #0b132b;
+  --secondary-color: #c43f9b;
+  --accent-color: #f651c3;
+  background-color: var(--main-color);
+  color: var(--font-color);
+}
+
+/* --------HEADER-------- */
+header {
+  background-color: var(--font-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 125px;
+}
+
+/* HEADER -- LOGO */
+.logoContainer {
+  color: var(--main-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#websiteTitle {
+  padding: 25px;
+  font-size: 36px;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+#logoPic {
+  padding-left: 0.25em;
+}
+
+/* HEADER -- NAVBAR */
+.navbarItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  vertical-align: middle;
+  list-style: none;
+  gap: 2em;
+  font-size: 24px;
+  font-weight: 500;
+  padding-right: 2em;
+  text-align: center;
+}
+
+.navbarContainer a {
+  text-decoration: none;
+  padding: 5px;
+  color: var(--secondary-color);
+}
+
+.navbarItems li:hover {
+  background-color: var(--main-color);
+  transition: 0.2s ease;
+  text-align: center;
+}
+
+/* responsive styling of the navbar */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+/* responsive design using CSS media queries */
+@media (max-width: 768px) {
+  .navbarItems {
+    display: none;
+    position: absolute;
+    background-color: var(--accent-color);
+    color: var(--font-color);
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .navbarItems li:hover {
+    display: block;
+    color: var(--font-color);
+  }
+
+  .hamburger {
+    display: block;
+    font-size: 24px;
+    user-select: none;
+    color: var(--secondary-color);
+    font-size: 45px;
+  }
+
+  input[type="checkbox"]:checked ~ .navbarItems {
+    display: block;
+  }
+}
+
+/* --------LANDING PAGE-------- */
+.landingContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+  margin: 30px;
+  border-bottom: #c43f9b;
+  border-style: dotted;
+  height: fit-content;
+}
+
+/* LANDING PAGE -- PICTURE */
+#selfPortrait > img {
+  width: 300px;
+  height: 450px;
+  padding-top: 30px;
+}
+
+#selfPortraitCaption {
+  width: 300px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+/* LANDING PAGE -- INTRO TEXT */
+.intro {
+  width: 80%;
+}
+
+#introText {
+  font-size: 64px;
+  padding: 10px;
+}
+
+#introSubText {
+  padding: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+/* LANDING PAGE -- BUTTON */
+#toResumeButton {
+  background-color: var(--accent-color);
+  border: var(--secondary-color);
+  border-radius: 5px;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  transition: 0.3s;
+  cursor: pointer;
+  margin: 15px 15px 15px 15px;
+  align-self: center;
+}
+
+#toResumeButton:hover {
+  opacity: 0.75;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 20px;
+}
+
+/* LANDING PAGE -- EDUCATION PROGRESS */
+.educationContainer {
+  margin: 30px;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+#degreeHeading {
+  padding-bottom: 10px;
+  font-size: 30px;
+}
+
+/* pseudo element to change the background color of the progres bar*/
+#creditsNeeded::-webkit-progress-bar {
+  background-color: var(--accent-color);
+}
+
+#creditsNeeded::-webkit-progress-value {
+  background-color: var(--font-color);
+}
+
+#creditsNeeded {
+  position: relative;
+}
+/* #creditsNeeded:hover::after {
+  display: inline;
+  content: attr(value);
+  color: #c43f9b;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+} */
+
+/* --------FOOTER-------- */
+footer {
+  margin-top: 30px;
+  border-top: 1px;
+  border-style: solid;
+  padding: 10px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+footer a {
+  color: blue;
+}
+
+/* ------------RESUME PAGE---------------- */
+
+.resume {
+  margin: 30px;
+}
+#resumeTitle {
+  margin-top: 20px;
+  padding: 5px;
+  text-align: center;
+  font-size: 30px;
+  border-bottom: 2px var(--font-color);
+  border-style: solid;
+}
+
+.resume h2 {
+  padding: 10px 0 5px 0;
+  font-size: 24px;
+  text-decoration: underline;
+}
+
+.resume h3 {
+  font-style: italic;
+}
+
+.resume p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.resume li {
+  list-style: circle;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-left: 50px;
+}
+
+#educationTable thead {
+  font-size: 22px;
+}
+
+#educationTable td {
+  font-size: 18px;
+  padding: 10px;
+}
+
+#resumePDF {
+  width: 500px;
+  height: 700px;
+  padding-left: 40px;
+}
+
+.resume_document {
+  margin: 30px;
+  border-left: 2px var(--secondary-color);
+  border-style: dotted;
+  padding: 30px;
+  text-align: center;
+}
+
+#resumeHeading {
+  padding-bottom: 20px;
+}
+
+.resumeContainer {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+/* --------FUN FACTS PAGE-------- */
+
+.funFactsContainer {
+  margin: 30px 30px 80px 30px;
+}
+
+#funFactsMainHeader {
+  font-size: 48px;
+  color: var(--secondary-color);
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.funFacts {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#FavSongContainer {
+  margin: 0 25px;
+  padding: 0 25px;
+  border-left: 2px var(--secondary-color);
+  border-right: 2px var(--secondary-color);
+  border-style: dotted;
+}
+
+.funFacts h2 {
+  padding: 20px;
+  font-style: italic;
+  font-size: 28px;
+}
+
+.funFacts p {
+  font-size: 20px;
+  padding: 10px;
+}

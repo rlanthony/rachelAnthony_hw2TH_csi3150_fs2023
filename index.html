@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rachel Anthony's Portfolio</title>
+
+    <!--external links-->
+    <link rel="icon" type="image/png" href="./img/RAportfolioFavIcon.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!--The header includes the logo, website title, and navigation bar to the other pages-->
+    <header>
+      <div class="logoContainer">
+        <img
+          id="logoPic"
+          src="./img/RAportfolioLogo.png"
+          alt="Rachel Anthony's pink RA logo"
+          height="70"
+          width="70"
+        />
+
+        <div id="websiteTitle">Rachel Anthony's Portfolio</div>
+      </div>
+
+      <nav class="navbarContainer">
+        <ul class="navBar">
+          <!--HAMBURGER menu icon and checkbox hack-->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+          <div class="navbarItems">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./html/my_resume.html">Resume</a></li>
+            <li><a href="./html/my_fun_facts.html">Fun Facts about Me</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="landingContent">
+      <div class="intro">
+        <h1 id="introText">A Portfolio of Rachel Anthony's Experiences</h1>
+
+        <p id="introSubText">
+          Hello, my name is Rachel Anthony, and I am currently a senior at
+          Oakland University studying management information systems and
+          computer science. The technical and interpersonal skills I have
+          developed in the classroom caused me to develop interests in the data
+          analytics and data science fields. Since November 2022, I have worked
+          at BorgWarner as an IT Network Mobility Intern supporting mobile
+          phones for over 2,000 North American Employees. I have acquired skills
+          in problem solving through troubleshooting the hardware and software
+          of mobile devices in addition to managing billing and accounts for the
+          services. This past summer, I was a Global IT Intern at General Motors
+          where I automated one of their change management reports in the
+          manufacturing environment to decrease the creation time by 95%.
+          Ultimately, my educational and professional experiences spark an
+          interest in developing my analytical skills potentially in the
+          healthcare, government, or automotive industry.
+          <br />
+          <br />
+          In addition to my academics at Oakland University, I was involved in
+          the Meadow Brook Ball Committee, serving as President and Tresurer
+          during my involvement. This student organization plans the annual ball
+          for 300 students using funds generated through fundraisers and student
+          organization fundings from the university. During my time on the
+          executive board, I acquired skills in budget management, contracts and
+          negotiation, event planning, and managing teams of 10-20 individuals.
+          All in all, my involvement in this committee allowed me to strengthen
+          my communication and interpersonal skills to be effective in the
+          corporate environment.
+        </p>
+
+        <div class="buttonContainer">
+          <button
+            id="toResumeButton"
+            type="button"
+            onclick="location.href = './html/my_resume.html'"
+          >
+            Learn More about Me!
+          </button>
+        </div>
+      </div>
+
+      <div class="pictureContainer">
+        <figure id="selfPortrait">
+          <img
+            src="./img/profilePicture.JPG"
+            alt="A picture of Rachel Anthony."
+          />
+          <figcaption id="selfPortraitCaption">
+            "To succeed in life, you need three things: a wishbone, a backbone,
+            and a funny bone" ~Reba McIntire
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <div class="educationContainer">
+      <h2 id="degreeHeading">My Progress to Degree</h2>
+      <label id="creditsLabel" for="creditsNeeded"
+        >Credits Needed to Graduate:</label
+      >
+      <progress id="creditsNeeded" max="100" value="98">98%</progress>
+      <p id="creditsExplanation">
+        I am currently taking the remaining credits I need to graduate and will
+        be doing so this December. My progress to degree is 98%.
+      </p>
+    </div>
+
+    <footer>
+      <hr />
+      <!--NOTES: <span> tag keeps everything in line | &emsp; gives four spaces | target="_blank" opens link in new tab-->
+      <span>
+        &copy; Rachel Anthony &emsp; Email:
+        <a href="mailto:rachelanthony@oakland.edu">rachelanthony@oakland.edu</a>
+        &emsp; LinkedIn:
+        <a href="https://www.linkedin.com/in/rachellynnanthony/" target="_blank"
+          >www.linkedin.com/in/rachellynnanthony
+        </a>
+      </span>
+    </footer>
+  </body>
+</html>

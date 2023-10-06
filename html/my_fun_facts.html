@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rachel Anthony's Portfolio</title>
+
+    <!--external links-->
+    <link rel="icon" type="image/png" href="../img/RAportfolioFavIcon.png" />
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logoContainer">
+        <img
+          id="logoPic"
+          src="../img/RAportfolioLogo.png"
+          alt="Rachel Anthony's pink RA logo"
+          height="70"
+          width="70"
+        />
+
+        <div id="websiteTitle">Rachel Anthony's Portfolio</div>
+      </div>
+
+      <nav class="navbarContainer">
+        <ul class="navBar">
+          <!--HAMBURGER menu icon and checkbox hack-->
+          <input type="checkbox" id="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="navbarItems">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./my_resume.html">Resume</a></li>
+            <li><a href="./my_fun_facts.html">Fun Facts about Me</a></li>
+          </div>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="funFactsContainer">
+      <h1 id="funFactsMainHeader">Some Fun Facts about Me</h1>
+
+      <div class="funFacts">
+        <!--This article highlights my favorite book including the title, author, cover, and where to purchase it-->
+        <section id="FavBookContainer">
+          <h2 id="favBookHeader">
+            Current Favorite Book: <i>The Fourth Wing </i>by Rebecca Yarros
+          </h2>
+          <img
+            id="favBookCover"
+            src="../img/fourthWing.jpg"
+            alt="The gold cover of The Fourth Wing with black dragons around the page."
+          />
+          <p>
+            Yarros' <i>The Fourth Wing</i> is my current favorite book because
+            it hooks you in right from the first page and transports you to a
+            fantasy world with a setting, plot, and characters you will not want
+            to leave. The main character Violet challenges the expectations that
+            have been imposed on her by society that ultimately will put her
+            life in danger, causing her to build relationships with unlikely
+            people in attempt to survive.
+            <br />
+            <br />
+            If this sounds like something you would like to read, you can
+            purchase the book
+            <a
+              href="https://www.amazon.com/Fourth-Wing-Empyrean-Rebecca-Yarros/dp/1649374046"
+              >here</a
+            >
+            off of Amazon.
+          </p>
+        </section>
+
+        <!--This section provides my favorite song, the artist, the album cover, a snippet of the song, and a link to purchase the song-->
+        <section id="FavSongContainer">
+          <h2 id="favSongHeader">
+            Current Favorite Song: <i>The Man Who Can't Be Moved</i> by The
+            Script
+          </h2>
+          <img
+            id="favSongCover"
+            src="../img/Script_album.jpg"
+            alt="The Script (album)"
+          />
+          <p>Listen to a snippet of the song below!</p>
+          <audio controls>
+            <source src="../audio/theScript.m4a" type="audio/mp4" />
+            <p>Your browser does not support this audio file type.</p>
+          </audio>
+
+          <p>
+            Listen to the full song on
+            <a href="https://www.youtube.com/watch?v=gS9o1FAszdk">YouTube</a>!
+          </p>
+        </section>
+
+        <!--This section includes my favorite movie and its trailer embedded in the webpage-->
+        <section id="FavTVShowContainer">
+          <h2 id="favShowHeader">
+            Current Favorite TV Show: <i>Schitt's Creek</i>
+          </h2>
+
+          <iframe
+            width="600"
+            height="335"
+            src="https://www.youtube.com/embed/W0uWS6CnC2o?si=gKEpplYyE0ssmNwi"
+            allowfullscreen
+          ></iframe>
+
+          <p>
+            Watch the trailer to the series above! Prepare for a hilarious show
+            depicting the life of a former wealthy family who moves to a small
+            town.
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <footer>
+      <hr />
+      <span>
+        &copy; Rachel Anthony &emsp; Email:
+        <a href="mailto:rachelanthony@oakland.edu">rachelanthony@oakland.edu</a>
+        &emsp; LinkedIn:
+        <a href="https://www.linkedin.com/in/rachellynnanthony/" target="_blank"
+          >www.linkedin.com/in/rachellynnanthony
+        </a>
+      </span>
+    </footer>
+  </body>
+</html>
